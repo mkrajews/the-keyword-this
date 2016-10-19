@@ -9,7 +9,7 @@
       //Answer
       // explicit
       // implicit
-      // default/window 
+      // default/window
         // new
 
   // 3) What is the difference between call and apply?
@@ -40,7 +40,7 @@
       }
 
     }
-getUsername();
+// getUsername();
 //Now, invoke the getUsername method and verify you got the username of the object and not anything else.
 
 
@@ -95,7 +95,9 @@ var getMyUsername = function() {
  return this.username;
 };
 
-var userName = getMyUsername(); //Fix this
+
+var userName = getMyUsername.apply(myUser); //Fix this
+console.log(userName);
 
 //Above you're given an object, and  a function. What will the getUsername function return?
 //Note(no tests)
